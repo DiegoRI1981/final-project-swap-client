@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Button } from "react-bootstrap"
+import { Button, Container } from "react-bootstrap"
 import UsersList from "../../components/UserList/UserList"
 import adminService from "../../services/admin.services"
 
@@ -23,7 +23,13 @@ const UsersListPage = () => {
     }
     return (
         <div className="listUser">
-            <UsersList users={users} />
+            <Container>
+
+                <h3>Users profiles</h3>
+                <hr />
+
+                <UsersList users={users} />
+            </Container>
         </div>
     )
 }

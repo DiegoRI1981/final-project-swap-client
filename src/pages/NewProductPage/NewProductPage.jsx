@@ -13,6 +13,7 @@ const NewProductPage = () => {
     return (
         <Container>
             <h3>New product</h3>
+            <hr />
             <NewProductForm fireFinalActions={fireFinalActions} />
         </Container>
     )

@@ -11,9 +11,9 @@ const Navigation = () => {
 
     return (
 
-        <Navbar expand="lg mb-4" bg="dark" variant="dark">
+        <Navbar fixed="top" expand="lg" bg="dark" variant="dark">
             <Container fluid>
-                <Navbar.Brand href="/">SWAP</Navbar.Brand>
+                <Navbar.Brand className='ms-4' href="/">SWAP</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -44,7 +44,7 @@ const Navigation = () => {
                                     </Link> */}
                                     {user.role === 'ADMIN' &&
                                         <Link to="/allprofiles">
-                                            <Nav.Link as="span">All profiles</Nav.Link>
+                                            <Nav.Link as="span">Users profiles</Nav.Link>
                                         </Link>
                                     }
                                     <Link to="/">

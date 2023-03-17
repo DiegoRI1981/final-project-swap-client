@@ -31,7 +31,7 @@ const UserCard = ({ firstname, lastname, email, profileImg, _id }) => {
 
         <Card className="UserCard mb-2">
             <Card.Body>
-                <img width={200} variant="top" src={profileImg} />
+                <Card.Img variant="top" src={profileImg} />
                 <hr />
                 <Card.Title>{firstname} {lastname}</Card.Title>
                 <Card.Text>Email: {email} </Card.Text>

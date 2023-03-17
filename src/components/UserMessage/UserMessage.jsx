@@ -7,11 +7,9 @@ const UserMessage = () => {
     const { closeToast, toastMessage, showToast } = useContext(MessageContext)
 
     return (
-        <Toast onClose={closeToast} show={showToast} delay={3000} autohide style={{ position: 'fixed', bottom: 500, left: 10 }}>
-            <Toast.Header>
-                <strong className="me-auto">Mensaje del sistema</strong>
-            </Toast.Header>
-            <Toast.Body>{toastMessage}</Toast.Body>
+        <Toast className="me-auto bg-info" onClose={closeToast} show={showToast} delay={3000} autohide style={{ position: 'fixed', bottom: 500, left: 10 }}>
+
+            <Toast.Body> <b>{toastMessage}</b></Toast.Body>
         </Toast>
     )
 }

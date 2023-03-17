@@ -82,12 +82,12 @@ const ProfilePage = () => {
                 </Col>
             </Row>
 
-            <hr />
 
-            <h3>Your chats</h3>
+
+            {/* <h3>Your chats</h3>
             <Link to={`/chatlist`}>
                 <Button variant="dark m-2">chats</Button>
-            </Link>
+            </Link> */}
 
             <hr />
 

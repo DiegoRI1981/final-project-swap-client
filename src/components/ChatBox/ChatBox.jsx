@@ -4,7 +4,7 @@ import chatService from "../../services/chat.services.js"
 import ChatForm from "../ChatForm/ChatForm"
 import ChatList from "../ChatList/ChatList"
 import { AuthContext } from '../../contexts/auth.context'
-import { useContext } from "react"
+import { useContext, useParams } from "react"
 
 const ChatBox = ({ participant_id, setChat, chat }) => {
 
@@ -13,7 +13,7 @@ const ChatBox = ({ participant_id, setChat, chat }) => {
 
     return (
         <Card>
-            <Card.Header>Chat with:{participant_id}</Card.Header>
+            {/* <Card.Header>Chat with:{participant_id}</Card.Header> */}
             <Card.Body>
                 {chat ? (
                     <>

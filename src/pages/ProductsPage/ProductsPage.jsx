@@ -47,7 +47,7 @@ const ProductsPage = () => {
 
                         <>
 
-                            <h3>Products</h3>
+                            <h3>Products galery</h3>
                             <hr />
                             <Row>
                                 <Col md={{ offset: 3, span: 6 }}>

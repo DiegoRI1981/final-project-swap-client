@@ -1,10 +1,13 @@
-import { Spinner } from "react-bootstrap"
+import { Container, Spinner } from "react-bootstrap"
 
 const Loader = () => {
     return (
-        <Spinner animation="border" role="status" variant="info">
-            <span className="visually-hidden" > Loading...</span >
-        </Spinner >
+        <Container>
+
+            <Spinner className="m-5" animation="border" role="status" variant="secondary">
+                <span className="visually-hidden" > Loading...</span >
+            </Spinner >
+        </Container>
     )
 }
 

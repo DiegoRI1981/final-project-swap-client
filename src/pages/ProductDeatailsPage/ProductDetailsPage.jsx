@@ -52,10 +52,10 @@ const ProductDetailsPage = () => {
                     <Button variant="dark ms-3 ">Profile</Button>
                 </Link>
             }
-
             <Link to={`/chat/${product.owner}`}>
                 <Button variant="dark ms-3">Chat</Button>
             </Link>
+
         </Container>
 
     )

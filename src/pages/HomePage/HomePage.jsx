@@ -1,4 +1,5 @@
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Button } from "react-bootstrap"
+import { Link } from "react-router-dom"
 import './HomePage.css'
 
 
@@ -12,7 +13,11 @@ const HomePage = () => {
 
                 <h1>S W A P</h1>
                 <hr />
-                <p>"Swapping is the new shopping"</p>
+                <h5 className="mt-4 mb-5">"Swapping is the new shopping"</h5>
+                <Link to={`/products`}>
+                    <Button variant="dark mt-5 btn-sm">Products galery</Button>
+                </Link>
+
             </div>
         </Container>
     )
